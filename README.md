@@ -18,7 +18,6 @@ A modern Pokemon browsing application built with Next.js 15, TypeScript, and Tai
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **API**: [PokeAPI](https://pokeapi.co/)
 - **Code Quality**: ESLint + Prettier
-- **Font**: [Geist](https://vercel.com/font) by Vercel
 
 ## 📁 Project Structure
 
@@ -59,14 +58,13 @@ pokemon/
 ### Prerequisites
 
 - Node.js 18+
-- npm, yarn, pnpm, or bun
+- npm, yarn
 
 ### Installation
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
-cd pokemon
+git clone https://github.com/phanthanhduyjin/pokemon.git
 
 # Install dependencies
 npm install
@@ -118,11 +116,9 @@ The application implements intelligent filtering based on the number of selected
    - Example: Fire + Flying + Dragon = Pokemon with (Fire+Flying) OR (Fire+Dragon) OR (Flying+Dragon)
 
 
-## 🎨 Styling & Design
-
 ## 🚀 Deployment
 
-### Vercel (Recommended)
+### Vercel
 
 The easiest way to deploy is using the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme):
 
