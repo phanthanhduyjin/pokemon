@@ -6,7 +6,6 @@ A modern Pokemon browsing application built with Next.js 15, TypeScript, and Tai
 
 - **Server-Side Rendered Pokemon Lists** - Fast loading with SSR
 - **Advanced Type Filtering** - Smart filtering logic for single, dual, and multiple types
-- **Responsive Design** - Works perfectly on all devices
 - **Type Safety** - Full TypeScript implementation
 - **Modern UI** - Clean interface with Tailwind CSS
 - **Pagination** - Efficient navigation through Pokemon lists
