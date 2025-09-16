@@ -1,0 +1,19 @@
+# dependencies
+node_modules
+
+# Next.js build output
+.next
+out
+build
+
+# TypeScript env
+next-env.d.ts
+
+# Logs
+*.log
+
+# Coverage reports
+coverage
+
+# Others (optional)
+dist
