@@ -1,5 +1,5 @@
 'use client'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useSearchParams } from 'next/navigation'
 import { TypeItem } from './TypeItem'
 import { POKEMON_ROUTE } from '@/utils/routes'
 
@@ -12,7 +12,6 @@ export const PokemonTypesClient = ({
   selectedTypes,
   types,
 }: PokemonTypesClientProps) => {
-  const router = useRouter()
   const searchParams = useSearchParams()
 
   const buildFilterUrl = (type: string | null) => {
@@ -40,19 +39,6 @@ export const PokemonTypesClient = ({
     return `${POKEMON_ROUTE}?${params.toString()}`
   }
 
-  const handleClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    type: string | null,
-  ) => {
-    if (e.metaKey || e.ctrlKey || e.button === 2) {
-      return
-    }
-
-    e.preventDefault()
-    const url = buildFilterUrl(type)
-    router.push(url)
-  }
-
   return (
     <>
       {types.map(type => (
@@ -60,7 +46,6 @@ export const PokemonTypesClient = ({
           key={type.name}
           item={{ name: type.name, url: buildFilterUrl(type.name) }}
           isSelected={selectedTypes.includes(type.name)}
-          onClick={handleClick}
         />
       ))}
     </>

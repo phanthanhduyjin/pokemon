@@ -114,7 +114,6 @@ The application implements intelligent filtering based on the number of selected
    - Prevents empty results since Pokemon have max 2 types
    - Example: Fire + Flying + Dragon = Pokemon with (Fire+Flying) OR (Fire+Dragon) OR (Flying+Dragon)
 
-
 ## 🚀 Deployment
 
 ### Vercel
